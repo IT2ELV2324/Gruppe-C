@@ -9,7 +9,7 @@ class Vaapen:
 
 class Kniv(Vaapen):
     def __init__(self):
-        super().__init()
+        super().__init__()
 
     def angrip(self, angriper, motstander):
         if abs(motstander.pos - angriper.pos) < 3:
