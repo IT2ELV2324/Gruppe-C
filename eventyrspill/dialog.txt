@@ -1,4 +1,5 @@
 Vær hilset, helte_navn, du storartede helt! Velkommen til Gruppe C sitt eventyrspill!
-vi har tre "Arenaer", og en fiende for hver arena.
-første arena: den mørke skogen. i den mørke skogen kryr det av rare monstre
-ok
+Historien din starter rett utenfor en mørk skog, som noen kjenner som Nordmarka, på en kald og tåkete høstdag.
+Det er fagdag i kroppsøving, og gymlæreren har bestemt at du må gå en lang og krevende tur alene.
+Du kjenner en forferdelig stank som siger gjennom luften, og du, så nysgjerrig og eventyrlysten som du er, følger etter lukten for å undersøke...
+Etter å ha vandret litt, blir stanken bare verre, og rundt deg kryr det av merkelige og avskyelige skapninger.

@@ -16,6 +16,13 @@ class Karakter:
 
     def print_meg(self):
         print(f"{self.navn} har hp: {self.hp} og xp: {self.xp}")
-        
+    
+    def print_inventory(self):
+        print(f"{self.navn} sitt inventory: ", end="")
+        for item in self.inventory:
+            print(item.mitt_navn(), end=" | ")
+        print("")
 
+
+navneliste=["Mutantleopard", "Mutantape", "Mutantpapegøye"]
 
