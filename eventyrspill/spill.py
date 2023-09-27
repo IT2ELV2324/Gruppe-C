@@ -21,7 +21,7 @@ print(dialog[1])
 #hent dialog ved å bruke dialog[i], der i er linjen i dialog.txt hvor teksten ligger.
 
 hovedperson = karakterer.Karakter(heltenavn, hp=100, xp=0, pos=0)
-hovedperson.inventory = [items.Kniv(), items.Pil_og_bue(piler=15)]
+hovedperson.inventory = [items.Kniv(), items.Pil_og_bue(piler=10)]
 
 fiende = karakterer.Karakter("Fiende", hp=100, xp=0, pos=2)
 fiende.inventory.append(items.Kniv())
