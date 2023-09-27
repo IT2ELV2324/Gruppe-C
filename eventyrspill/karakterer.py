@@ -7,7 +7,15 @@ class Karakter:
     #_xp = 0
     #_slag = 0
     #_dodge = 0
-    def __init__(self, navn, hp, xp):
-        self._navn=navn
-        self._hp=hp
-        self._xp=xp
+    def __init__(self, navn, hp, xp, pos):
+        self.navn = navn
+        self.hp=hp
+        self.xp=xp
+        self.inventory = []
+        self.pos = pos
+
+    def print_meg(self):
+        print(f"{self.navn} har hp: {self.hp} og xp: {self.xp}")
+        
+
+
