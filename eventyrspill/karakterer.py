@@ -1,21 +1,16 @@
-#HOVEDPERSON = {"hp": 100, "xp":0, "slag": 3, "dodge": 2}
-#FIENDE = {"hp": 90, "xp":0, "slag": 3, "dodge": 4}
+import random
+
 
 class Karakter:
     """Generell klasse for karakter som alle skal arve fra"""
-    #_hp = 100
-    #_xp = 0
-    #_slag = 0
-    #_dodge = 0
-    def __init__(self, navn, hp, xp, pos):
+    def __init__(self, navn, hp, pos):
         self.navn = navn
         self.hp=hp
-        self.xp=xp
         self.inventory = []
         self.pos = pos
 
     def print_meg(self):
-        print(f"{self.navn} har hp: {self.hp} og xp: {self.xp}")
+        print(f"{self.navn} har hp: {self.hp}")
     
     def print_inventory(self):
         print(f"{self.navn} sitt inventory: ", end="")
@@ -23,6 +18,9 @@ class Karakter:
             print(item.mitt_navn(), end=" | ")
         print("")
 
+class Fiende(Karakter):
+    def __init__(self, hp, pos):
+        super().__init__(random.choice(navneliste), hp, pos)
 
-navneliste=["Mutantleopard", "Mutantape", "Mutantpapegøye"]
+navneliste=["Mutantelg", "Mutantgrevling", "Mutantrådyr", "Mutantrev"]
 

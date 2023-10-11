@@ -39,6 +39,14 @@ class Smørkniv(Vaapen):
         self.maks_skade = 20
         self.navn = "Smørkniv"
 
+class Paraply(Vaapen):
+    def __init__(self):
+        super().__init__()
+        self.range = 4
+        self.min_skade = 5
+        self.maks_skade = 10
+        self.navn = "Paraply"
+
 class Pil_og_bue(Vaapen):
     def __init__(self, piler):
         super().__init__()
