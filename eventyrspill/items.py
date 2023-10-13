@@ -17,6 +17,10 @@ class Vaapen:
         motstander.hp = motstander.hp - skade
         print(f"{angriper.navn} gjorde {skade} skade mot {motstander.navn} med {self.navn}")
 
+    # def dytte(self, angriper, motstander):
+    #     motstander.pos = motstander.pos -4
+    #     print(f"Du dyttet {angriper.navn} vekk med 4 steg")
+
     def mitt_navn(self) -> str:
         return f"{self.navn} (range: {self.range})"
 
@@ -43,9 +47,17 @@ class Paraply(Vaapen):
     def __init__(self):
         super().__init__()
         self.range = 4
-        self.min_skade = 5
-        self.maks_skade = 10
+        self.min_skade = 0
+        self.maks_skade = 0
         self.navn = "Paraply"
+
+#slett denne senere
+class Juks(Vaapen):
+    def __init__(self):
+        self.range = 999
+        self.min_skade = 100
+        self.maks_skade = 999
+        self.navn = "Juks"
 
 class Pil_og_bue(Vaapen):
     def __init__(self, piler):
@@ -55,7 +67,9 @@ class Pil_og_bue(Vaapen):
         self.maks_skade = 15
         self.piler = piler
         self.navn = "Pil og bue"
-    
+
+
+
     def angrip(self, angriper, motstander):
         if self.piler > 0:
             self.piler -= 1
@@ -63,3 +77,12 @@ class Pil_og_bue(Vaapen):
             print(f"{angriper.navn} har {self.piler} piler igjen")
         else:
             print(f"{angriper.navn} er tom for piler!")
+
+# class healPotion(self):
+#     self.hp = hp
+
+#     def __init__(self):
+#         pass
+
+#         def bruk(mål):
+#             mål.hp += 50
