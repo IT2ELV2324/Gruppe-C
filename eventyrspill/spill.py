@@ -108,7 +108,7 @@ fiende = karakterer.Fiende(hp=100,pos=5)
 fiende.inventory = [items.Smørkniv()]
 
 if __name__ == "__main__":
-    juksemodus = input("Oensker du et juksevaapen? (ja/nei): ").capitalize().strip()
+    juksemodus = "nei" #input("Oensker du et juksevaapen? (ja/nei): ").capitalize().strip()
 
     dialog = load_dialog()
     print(dialog[1])
