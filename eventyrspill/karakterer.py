@@ -8,7 +8,9 @@ class Karakter:
         self.hp=hp
         self.inventory = []
         self.pos = pos
+        self.sleep = False
 
+    # Funksjonene nedenfor printer informasjon til konsollen
     def print_meg(self):
         print(f"{self.navn} har hp: {self.hp}")
     
@@ -22,5 +24,6 @@ class Fiende(Karakter):
     def __init__(self, hp, pos):
         super().__init__(random.choice(navneliste), hp, pos)
 
+# Liste for monsternavn
 navneliste=["Mutantelg", "Mutantgrevling", "Mutantrådyr", "Mutantrev"]
 
