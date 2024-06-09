@@ -87,7 +87,7 @@ def fight():
             if random.randint(1,100) < våkneFiende:
                 fiende.sleep = False
                 våkneFiende = 50
-                print(fiende, "våkna!")
+                print(f"{fiende.navn} våkna!")
             else:
                 print(f"{fiende.navn} kan ikke angripe. Den sover!")
                 våkneFiende += 10
@@ -116,6 +116,7 @@ if __name__ == "__main__":
 
     ### Første fight (garantert seier)
     print(dialog[3])
+    trykk_enter()
     
     if juksemodus == "Ja":
         hovedperson.inventory.append(items.Juks())
